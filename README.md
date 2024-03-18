@@ -2,6 +2,10 @@
 This is a simple lib to schedule the execution of functions.
 
 ## Usage Example
+This will run a schedule every 5 seconds with 1 second offset, ie. at 00:00:01, 00:00:06, 00:00:11, 00:00:16, and so on. The cycle function prints the current time, waits a random amount of seconds (max 5) and then rolls dice to decide whether to stop the schedule.  
+  
+After 30 seconds the schedule will be stopped either way and 10 seconds later the program exits.
+
 ```golang
 package main
 
